@@ -2947,7 +2947,6 @@ var isFileProtocol = (location.protocol === 'file:'    ||
 less.env = less.env || (location.hostname == '127.0.0.1' ||
                         location.hostname == '0.0.0.0'   ||
                         location.hostname == 'localhost' ||
-                        location.hostname.indexOf('.local') != -1 ||
                         location.port.length > 0         ||
                         isFileProtocol                   ? 'development'
                                                          : 'production');
